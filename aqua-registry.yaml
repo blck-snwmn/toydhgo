@@ -1,9 +1,0 @@
----
-# yaml-language-server: $schema=https://raw.githubusercontent.com/aquaproj/aqua/main/json-schema/registry.json
-packages:
-  # Build with the repository's Go toolchain because upstream v2.12.2 binaries
-  # were built with Go 1.26 and cannot analyze this Go 1.27 module.
-  - type: go_install
-    name: golangci/golangci-lint
-    path: github.com/golangci/golangci-lint/v2/cmd/golangci-lint
-    description: Fast linters runner for Go
