@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/aquaproj/aqua/main/json-schema/policy.json
+registries:
+  - name: local
+    type: local
+    path: aqua-registry.yaml
+  - type: standard
+    ref: semver(">= 4.550.0")
+packages:
+  - name: golangci/golangci-lint
+    registry: local
+  - registry: standard
